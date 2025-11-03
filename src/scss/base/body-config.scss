@@ -1,0 +1,17 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: start;
+  }
+}
+
+.site-content {
+  flex: 1;
+}
+.main {
+  width: 100%;
+}
