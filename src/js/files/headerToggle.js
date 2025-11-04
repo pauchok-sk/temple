@@ -3,21 +3,31 @@ export default function headerToggle() {
 
   if (header) {
     const btn = document.querySelector("#header-toggle-btn");
-    const main = document.querySelector("#header-main");
+
+    header.addEventListener("click", (e) => e.stopPropagation());
+
+    document.body.addEventListener("click", () => {
+      if (header.classList.contains("_open")) {
+        handleClose();
+      }
+    });
 
     btn.addEventListener("click", () => {
       if (btn.classList.contains("_close")) {
-        btn.classList.remove("_close");
-        header.classList.remove("_open");
-
-        setTimeout(() => {
-          main.classList.add("_hide");
-        }, 100)
+        handleClose();
       } else {
-        btn.classList.add("_close");
-        header.classList.add("_open");
-        main.classList.remove("_hide");
+        handleOpen();
       }
     });
+
+    function handleClose() {
+      btn.classList.remove("_close");
+      header.classList.remove("_open");
+    }
+
+    function handleOpen() {
+      btn.classList.add("_close");
+      header.classList.add("_open");
+    }
   }
 }

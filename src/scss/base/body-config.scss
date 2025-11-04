@@ -3,14 +3,17 @@
   touch-action: none;
 }
 .body {
-  @media (min-width: 992px) {
-    display: flex;
-    align-items: start;
+  padding-left: 295px;
+  @include laptop {
+    padding-left: 65px;
+  }
+  @include laptop-min {
+    padding-left: 0;
   }
 }
 
 .site-content {
-  flex: 1;
+  width: 100%;
 }
 .main {
   width: 100%;
