@@ -485,12 +485,6 @@ body {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%)
 }
-.header._open .header__line-logo {
-  max-height: 0
-}
-.header._open .header__main {
-  width: 295px
-}
 .header__wrapper {
   position: relative;
   display: flex;
@@ -889,6 +883,12 @@ body {
 @media (min-width:992px) {
   .slider-pagination {
     display: none
+  }
+  .header._open .header__line-logo {
+    max-height: 0
+  }
+  .header._open .header__main {
+    width: 295px
   }
   .header__logo .descr {
     display: none
