@@ -9,10 +9,18 @@
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/sect";
+@import "./ui/title";
+@import "./ui/card-new";
+@import "./ui/slider";
+
+// widgets
+@import "./widgets/burger";
 
 // components
 @import "./components/header";
 
 @import "./components/intro";
+@import "./components/s-news";
 
 @import "./components/footer";

@@ -1,4 +1,9 @@
-<section class="intro" style="background: url('@img/intro.jpg') left 0 top 0 / cover no-repeat;">
+<section class="intro">
+  <picture class="intro__bg">
+    <source srcset="@img/intro-mob.jpg" media="(max-width: 480px)">
+    <source srcset="@img/intro-tablet.jpg" media="(max-width: 768px)">
+    <img src="@img/intro.jpg" alt="image">
+  </picture>
   <div class="container">
     <div class="intro__wrapper">
       <div class="intro__head">
